@@ -4,6 +4,7 @@ from django.urls import reverse
 class Car(models.Model):
 	make = models.CharField(max_length=120)
 	model = models.CharField(max_length=120)
+	car_img= models.ImageField(null=True, blank=True)
 	year = models.IntegerField()
 
 	def __str__(self):
